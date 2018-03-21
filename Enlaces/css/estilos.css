@@ -1,0 +1,250 @@
+body{
+  font-family: 'Dancing Script', arial;
+  font-size: 16px;
+  background-color: black;
+}
+img {
+    box-shadow: 2px 2px #02010a;
+}
+header{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0 0;
+
+  animation-duration: 1s;
+  animation-name: Proyecto;
+}
+@-webkit-keyframes Proyecto {
+    0% {
+        margin-top:100%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+
+}
+
+h1{
+  text-shadow: 2px 2px #02010a;
+  font-size: 25px !important;
+}
+header .contenedor{
+  display: flex;
+  display: -webkit-flex;
+}
+header .contenedor #titulo{
+  width: 60%;
+}
+header .contenedor #menu-principal{
+  width: 40%;
+  padding-top: 20px;
+}
+
+#menu-principal ul {
+    float: right;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu-principal ul li {
+  list-style: none;
+  padding: 10px;
+}
+#menu-principal ul li a{
+  text-decoration: none;
+  color: white;
+  color: white;
+  padding: 10px;
+}
+#menu-principal a:hover{
+  color: yellow;
+}
+
+/**paisajes**/
+#central  img {
+  width: 80%
+}
+#central .imagen-Primeras{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  background: #d5c75f;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+#central .imagen-Segundas{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  background: #d5c75f;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#central .imagen-Primeras .imag1{
+  filter: blur(10px);
+}
+#central .imagen-Primeras .imag2 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .imagen-Segundas .imag4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .imagen-Segundas .imag6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .imagen-Primeras .imag3{
+  filter: sepia(90%);
+}
+/**Retratos**/
+#central .Retratos-1{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  background: #d5c75f;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+#central .Retratos-2{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  background: #d5c75f;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#central .Retratos-1 .Retrato1{
+  filter: blur(10px);
+}
+#central .Retratos-1 .Retrato2 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .Retratos-2 .Retrato4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .Retratos-2 .Retrato6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#central .Retratos-1 .Retrato3{
+  filter: sepia(90%);
+}
+footer{
+  background: #C6d5c5;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  }
+footer .contenedor{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 95%;
+  text-align: center;
+  }
+footer .contenedor .Informacion #correo{
+  font-family: cursive !important;
+}
+footer .contenedor div{
+    flex-grow: 1;
+}
+.Redes-sociales img{
+  width: 20px;
+}
+.Derechos Img{
+  width: 30px;
+}
+
+/**Movil**/
+@media screen and (max-width: 900px){
+header .contenedor #titulo{
+  width: 100%;
+  text-align: center;
+}
+header .contenedor #menu-principal {
+  width: 100%;
+  padding: 0px;
+}
+header .contenedor{
+flex-direction: column;
+width: 100%;
+text-align: center;
+}
+/**Paisajes**/
+#central .imagen-Primeras{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+#central .imagen-Segundas{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+#central .imagen-Primeras img{
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#central .imagen-Segundas img{
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/**Retratos**/
+#central .Retratos-1{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+#central .Retratos-2{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+#central .Retrato-1 img{
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#central .Retrato-2 img{
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .contenedor{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  width: 90%;
+}
+footer .contenedor div{
+  width: 100%;
+}
+
+}
